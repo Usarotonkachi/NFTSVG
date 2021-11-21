@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "hardhat run scripts/deploy.js --network hardhat",
+    "compile": "hardhat compile",
+    "node": "hardhat node"
   },
   "repository": {
     "type": "git",
@@ -19,10 +21,21 @@
   "homepage": "https://github.com/Usarotonkachi/On-Chain-NFT-example#readme",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.0",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
     "@nomiclabs/hardhat-waffle": "^2.0.0",
     "chai": "^4.2.0",
     "ethereum-waffle": "^3.0.0",
     "ethers": "^5.0.0",
-    "hardhat": "^2.6.7"
+    "hardhat": "^2.6.7",
+    "hardhat-deploy": "^0.9.8"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.2.2",
+    "@openzeppelin/contracts": "^4.3.2",
+    "base64-sol": "^1.1.0",
+    "dotenv": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "global": "^4.4.0",
+    "hardhat-shorthand": "^1.0.0"
   }
 }

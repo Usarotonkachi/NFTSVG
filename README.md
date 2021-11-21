@@ -1,15 +1,25 @@
-# Basic Sample Hardhat Project
+# Onchain NFT example
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
+## Local development
 
-Try running some of the following tasks:
+1. Launch a local node
 
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
+```sh
+pnpm node
+```
+
+2. Deploy contract on local testnet
+
+```sh
+pnpm deploy
+```
+
+3. Use contract in console
+
+```sh
+pnpx hardhat console
+
+> const Greeter = await ethers.getContractFactory('Greeter')
+> const greeter = Greeter.attach(`...`)
+> greeter.setGreeting('hello')
 ```
