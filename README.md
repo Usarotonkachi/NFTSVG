@@ -1,5 +1,7 @@
 # Onchain NFT example
 
+Contract address: [0x3AEDBc554Af1977034c3FFeD00251ab18935F5Ce](https://rinkeby.etherscan.io/token/0x3AEDBc554Af1977034c3FFeD00251ab18935F5Ce)
+
 ## Local development
 
 1. Launch a local node
